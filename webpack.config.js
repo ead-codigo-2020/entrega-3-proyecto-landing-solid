@@ -10,6 +10,7 @@ Encore
 	.setPublicPath( './public/assets/dist' )
 	.setOutputPath( 'public/assets/dist' )
 	.autoProvidejQuery()
+	.addEntry( 'script', './src/js/script.js' )
 	.addStyleEntry( 'style', './src/scss/style.scss' )
 ;
 
