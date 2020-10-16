@@ -1,0 +1,42 @@
+{
+  "name": "@ead-codigo-2020/bootstrap-starter",
+  "version": "0.1.0",
+  "description": "Ejemplo de repositorio base para utilizar Boostrap como dependencia",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx encore dev --watch",
+    "dist": "npx encore production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ead-codigo-2020/bootstrap-starter.git"
+  },
+  "keywords": [
+    "bootsrap",
+    "boilerplate",
+    "scss"
+  ],
+  "author": "Felipe Lavín <felipe.lavin@ead.cl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ead-codigo-2020/bootstrap-starter/issues"
+  },
+  "homepage": "https://github.com/ead-codigo-2020/bootstrap-starter#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.31.0",
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^4.5.3",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^9.0.3"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR"
+  ]
+}
