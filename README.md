@@ -16,7 +16,7 @@ Ejemplo de repositorio inicial para usar Bootstrap como dependencia
 ## Estructura de archivos
 
 ```
-/assets/            ---------------- carpeta contenedora de archivos fuente
+/assets/             ---------------- carpeta contenedora de archivos fuente
    /scss/style.scss  ---------------- hoja de estilos principal (@import)
    /js/script.js     ---------------- archivo js principal
    /svg/src/         ---------------- archivos fuente de íconos svg
