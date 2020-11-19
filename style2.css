@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(50,51,51);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.2fr 0.75fr 0.2fr 0.4fr 1fr 0.2fr;
+    grid-template-rows: 0.4fr 0.4fr 20em 0.4fr 0.3fr;
+}
+.grid p {
+     color: rgb(196, 196, 196);
+ }
+
+ .titulo {
+     grid-column: 2 / 5;
+     grid-row: 2;
+ }
+
+ .titulo>p {
+     font-size: 1.4em;
+     font-weight: bold;
+ }
+
+ .significado {
+    grid-column: 2;
+    grid-row: 3;
+ }
+
+ .significado>p {
+     font-size: 1em;
+     font-weight: inherit;
+ }
+
+ .definicion {
+    grid-column: 5;
+    grid-row: 3;
+ }
+
+ .definicion>p, .popup>p {
+  display: inline;
+  font-size: 1.2em;
+}
+
+.definicion ol {
+  color: rgb(196, 196, 196);  
+}
+
+ .logo {
+    grid-column: 2 / 5;
+    grid-row: 4;  
+ }
+
+ .logo>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+/* unvisited link */
+.logo>a:link {
+  color: rgb(94,94,94);
+}
+
+/* visited link */
+.logo>a:visited {
+  color: rgb(94,94,94);
+}
+
+/* mouse over link */
+.logo>a:hover {
+  color: rgb(196, 196, 196);
+}
+
+
+
+
+
+
+  .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.home {
+  grid-column: 6;
+  grid-row: 2;
+}
