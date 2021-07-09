@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(50,51,51);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr 1fr 0.5fr;
+}
+.grid p {
+     color: rgb(196, 196, 196);
+ }
+
+ .grid ol {
+     color: rgb(196, 196, 196);  
+ }
+
+.logo {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.descripcion {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.descripcion>p {
+    text-align: center;
+}
+
+.acronimo {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.acronimo>p {
+    text-align: left;
+}
+
+.descripcion2 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.descripcion2 {
+    text-align: right;
+}
+
+.pie {
+    grid-column: 2 / 4;
+    grid-row: 6;
+    justify-self: center;
+}
+
+.pie>p {
+    text-align: center;
+}
+
+.pie>ol {
+    text-align: left;
+}
+
+.logo>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+
+/* unvisited link */
+.logo>a:link {
+    color: rgb(94,94,94);
+  }
+  
+  /* visited link */
+  .logo>a:visited {
+    color: rgb(94,94,94);
+  }
+  
+  /* mouse over link */
+  .logo>a:hover {
+    color: rgb(196, 196, 196);
+  }
+
+  .titulo {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: left;
+    font-weight: bold;
+  }
+  
+  .significado {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    justify-self: left;
+    font-size: 18px;
+  }
